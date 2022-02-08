@@ -1,0 +1,159 @@
+/* Your custom styles */
+body{
+    text-decoration: none;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(65, 38, 38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: 1s all;
+    opacity: 0;
+    width:  100%;
+    height: 100%;
+}
+
+[v-cloak] { display:none; }
+
+.loading.show {
+    opacity: 1;
+}
+.loading .spin {
+    border: 3px solid hsla(185, 100%, 62%, 0.2);
+    border-top-color: #3cefff;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}  
+
+/* .container-fluid {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+} */
+
+.estilo:hover{
+    
+    height: 350px;
+    
+}
+
+.descuento{
+    position: absolute;
+    padding: 10px;
+    top: 15px;
+    border-radius: 0 15px 15px 0px;
+}
+.stock{
+    position: absolute;
+    padding: 10px;
+    top: 15px;
+    right: 4px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+
+.imagencentral{
+    background-image: url("https://cdn.shopify.com/s/files/1/0256/4594/0810/files/index_10_2048x.jpg?v=1619549279");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+
+
+.TituloFamilias{
+    padding-top: 5px;
+    color: #1f1919;
+    font-family: 'Roboto', sans-serif;;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.carousel-imagenes{
+    width: 100px;
+}
+
+.carousel-item img:hover{
+    cursor: pointer;
+}
+
+.TituloArticulo{
+    padding-top: 5px;
+    color: #1f1919;
+    font-family: 'Roboto', sans-serif;;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+    .TituloArticulo:hover{
+        color: #1f1919;
+}
+
+.PrecioArticulo{
+    /* padding-top: 5px; */
+    color: #1f1919;
+    font-family: 'Roboto', sans-serif;;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+    .PrecioArticulo:hover{
+        color: #1f1919;
+    }
+
+.TagDescuento{
+    position:absolute;
+    width: auto;
+    height: 30px;
+    left:2px;
+    top:10px;
+    border-radius: 0 10px 10px 0px;
+    line-height: 2;
+}
+
+.TagStock{
+    position:absolute;
+    width: auto;
+    height: 30px;
+    top:10px;
+    right:1px;
+    border-radius: 10px 0px 0px 10px;
+    line-height: 2;
+}
+
+.MenuSuperior{
+    width: 100%;
+    margin-right: 0%;
+}
+
+    .MenuSuperior p{
+        height: 9px;
+    }
+
+.BotonArticulo{
+    border-radius: 8px;
+}
+
+.BotonArticuloFlotante{
+    position: absolute;
+    bottom:120px;
+    right: 20px;
+}
